@@ -25,7 +25,8 @@ with open('config.txt') as f:
 
 # Song Directory
 if not os.path.exists(dir):
-	os.mkdir(dir)
+    os.mkdir(dir)
+    os.chdir(dir)
 else:
 	os.chdir(dir)
 
